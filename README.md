@@ -3,7 +3,7 @@ This is a project for an online weekly diary for Practice School.
 ## Installing the project
 clone this repo into your system
 ```bash
-git clone https://github.com/kestal-lab/PS-Diary.git
+git clone https://github.com/kestal-lab/PS2-Diary.git
 ```
 ## virtualenv
 Activate virtualenv that comes with the project and install required dependencies
