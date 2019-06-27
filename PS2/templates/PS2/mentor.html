@@ -1,0 +1,26 @@
+{% extends 'PS2/mentor_base.html' %}
+{% block content %}
+<div class="Entry" id="wrapper">
+<!-- <p align="right">Date/Time: <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script> -->
+
+<h2><center>Stations</h2>
+
+
+{%for station in stations%}
+
+<button class="Stations" onclick="window.location.href='/PS2/mentor/{{station.station_name}}'">{{station.station_name}}</button>
+
+{%endfor%}
+<br><br>
+
+<div class="footer">
+      <p style="font-size: 12px">Copyright © 2019. All Rights Reserved. <a href="/dev_page">Meet the Creators</a></p>      
+</div>
+
+</div>
+{% endblock %}

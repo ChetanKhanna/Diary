@@ -1,0 +1,15 @@
+{% if result_state == 'PENDING' %}
+	<p> 
+		Waiting for task-handler to start
+	</p>
+{% elif result_state == 'SUCCESS' %}
+	<p>
+		Done! If you are not automatically redirected to home page click link below.
+		<a href="/PS2/redirect/">Home Page.</a>
+	</p>
+{% elif result_state == 'PROGRESS' %}
+	<p>
+		Progress:
+		{{ result_current }} out of {{ result_total }} done.
+	</p>
+{% endif %}

@@ -1,0 +1,50 @@
+{% extends 'PS2/website_base.html' %}
+{% load static %}
+{% block header %}
+<div class="logo"><img src="{% static 'PS2/Images/logo.gif' %}"/>
+</div>
+<header id="myHeader">
+
+
+<!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a class="active">PS-Diary</a>
+  </div>
+
+  <!-- Left-aligned links (default) -->
+
+  <a type=button value="Previous Page" onClick="window.history.back();return false;"><div class="tooltip1"><i class="fa fa-chevron-left"></i><span class="tooltiptext1">Back</span></div></a>
+  
+  <a href="/PS2/student_profile/0/{{student.student_name}}"><div class="tooltip1">{{student.student_name}}<span class="tooltiptext1">View Profile</span></div></a>
+  
+  <a class="inactive">{{student.student_id}}</a>
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <!--<a href="#search">Search</a>-->
+    <!-- <a class="date">Date/Time: <span id="datetime"></span></a>   -->
+    <!-- <a href="/PS2/password_change/">Change Password</a> -->
+    <a href="/PS2/logout">Logout</a>
+  </div>
+ </div>
+</header>
+
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block weeks_data %}
+{% endblock %}
+
+{% block footer %}
+<!-- <script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script> -->
+
+
+{% endblock %}

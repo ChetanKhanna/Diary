@@ -1,0 +1,70 @@
+<style type="text/css">
+	
+ #myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width:1%;
+  height: 30px;
+  background-color: green;
+}
+
+</style>
+
+{% if result_state == 'FAILURE' %}
+	<p>
+		Failure
+	</p>
+{% elif result_state == 'PENDING' %}
+	<p> 
+		Waiting for task-handler to start
+	</p>
+{% elif result_state == 'PROGRESS' %}
+	<p>
+		Progress:
+		{{ result_current }} out of {{ result_total }} done.
+
+
+		<div id="myProgress">
+  			<div id="myBar"></div>
+		</div>
+
+	</p>
+{% elif result_state == 'SUCCESS' %}
+	<p>
+		<form method="post" enctype="multipart/form-data" >	    
+		        {% csrf_token %}
+
+		        <!-- <input type="file" value="myfile" name="myfile" > -->
+		        <button type="submit" style="float:left;" onclick="">Download</button>
+
+		</form>
+		<br><br>
+		Click on Download button to download Database.csv<br><br>
+		Done! Click here to go to
+		<a href="/PS2/redirect/">Home Page.</a>
+	</p>
+{%else%}
+	<p>
+		asdf
+	</p>
+{% endif %}
+
+{% if result_state != 'SUCCESS' %}
+	<script type="text/javascript">
+		
+	
+		function move() {
+				setTimeout(window.location.replace("/PS2/psd/download_progress/{{task_id}}/{{redirect_id}}"),100000);
+
+			  var elem = document.getElementById("myBar");
+			  var width = '{{result_percent}}';
+			  elem.style.width = width + '%';
+			
+			}
+			window.onload=move;
+
+	</script>
+{% endif %}

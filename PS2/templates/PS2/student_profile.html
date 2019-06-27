@@ -1,0 +1,190 @@
+{% extends 'PS2/website_base.html' %}
+{% load static %}
+{% block header %}
+<div class="logo"><img src="{% static 'PS2/Images/logo.gif' %}"/>
+</div>
+<header id="myHeader">
+
+<!-- Top navigation -->
+<div class="topnav">
+   <a type=button value="Previous Page" onClick="window.history.back();return false;"><div class="tooltip1"><i class="fa fa-chevron-left"></i><span class="tooltiptext1">Back</span></div></a>
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a class="active">PS-Diary</a>
+  </div>
+
+  <!-- Left-aligned links (default) -->
+  {%if is_student == 1 %}
+    <a class="inactive">{{student_object.student_name}}</a>
+    <!-- <input type=button value="Previous Page" onClick="window.history.back();return false;"> -->
+    <a class="inactive">{{student_object.student_id}}</a>
+  {%else%}
+    <a class="inactive">{{mentor_object.mentor_name}}</a>
+    <!-- <input type=button value="Previous Page" onClick="window.history.back();return false;"> -->
+    <a class="inactive">{{mentor_object.mentor_id}}</a>
+  {%endif%}
+
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <!--<a href="#search">Search</a>-->
+    <!-- <a class="date">Date/Time: <span id="datetime"></span></a>   -->
+    <a href="/PS2/password_change/">Change Password</a>
+    <a href="/PS2/logout">Logout</a>
+  </div>
+ </div>
+</header>
+
+
+{% endblock %}
+{% block content %}
+
+<div class="Entry" id="wrapper">
+<h1><center>Profile</h1>
+
+<div class="container">
+
+  <div class="toppane">
+
+  {% if hide_student == 0%}
+
+	<form method="post" >
+    {% csrf_token %}
+  <fieldset>
+    <legend><h2>Student Details</h2></legend><br>
+    {{user.token}}
+	<p class="formfield" >
+    <label for="task1" vertical-align= "middle">Name :
+    <input class="w3-input w3-border w3-round" name="name"  style= "width:100%" readonly value="{{student_object.student_name}}"></input></label></p>
+
+	<p class="formfield" >
+    <label for="task2" vertical-align= "middle">ID :
+    <input class="w3-input w3-border w3-round" name="id"  style= "width:100%" readonly value="{{student_object.student_id}}"></input></label></p>
+
+
+	<p class="formfield" >
+    <label for="task3" vertical-align= "middle">Email ID :
+    <input class="w3-input w3-border w3-round" name="student_email"  style= "width:100%" readonly value="{{student_object.student_email}}"></input></label></p>
+
+
+	<p class="formfield" >
+    <label for="task4" vertical-align= "middle">Phone Number :
+    <input class="w3-input w3-border w3-round" style="width:100%" name="student_contact"
+    {%if is_student == 0 %} readonly {%endif%} value="{{student_object.student_contact}}"></input></label></p>
+
+  {%if is_student == 1 %}
+  <p align="right" ><button type="submit" name="submit_student_phone" value="submit_student_phone">Save</button></p>
+  {%endif%}
+
+  </fieldset>
+</form>
+{%endif%}
+<br><br>
+
+
+  </div>
+
+
+  <div class="middlepane">
+
+
+  	<form method="post">
+        {% csrf_token %}
+  <fieldset>
+    <legend><h2>Mentor Details</h2></legend><br>
+
+
+	<p class="formfield" >
+    <label for="task1" vertical-align= "middle">Mentor Name :
+    <input class="w3-input w3-border w3-round" type ="text" name="m_name"  style="width:100%" readonly value="{{mentor_object.mentor_name}}"></input></label></p>
+
+
+	<p class="formfield" >
+    <label for="task2" vertical-align= "middle">Mentor ID :
+    <input class="w3-input w3-border w3-round" name="m_id"  style="width:100%" readonly value="{{mentor_object.mentor_id}}"></input></label></p>
+
+
+	<p class="formfield" >
+    <label for="task3" vertical-align= "middle">Email ID :
+    <input class="w3-input w3-border w3-round" name="mentor_email" style="width:100%"  readonly value="{{mentor_object.mentor_email}}"></input></label></p>
+
+	<p class="formfield" >
+    <label for="task4" vertical-align= "middle">Phone Number :
+    <input class="w3-input w3-border w3-round" name="mentor_contact" style="width:100%" value={{mentor_object.mentor_contact}}
+    {%if is_student == 1 %} readonly {%endif%}></input></label></p>
+
+  {%if is_student == 0 %}
+    <p align="right" ><button type="submit" name="submit_mentor" value="submit_mentor">Save</button></p>
+  {%endif%}
+
+  </div>
+
+
+  <div class="bottompane">
+
+
+	<form method="post">
+    {% csrf_token %}
+  <fieldset>
+    <legend><h2>Organization Details</h2></legend><br>
+
+
+	<p class="formfield" >
+    <label for="task1" vertical-align= "middle">Organization Name :
+    <input class="w3-input w3-border w3-round" name="o_name" style="width:100%" value="{{station_object.station_name}}" readonly></input></label></p>
+
+	<p class="formfield" >
+    <label for="task2" vertical-align= "middle">Organization Address :
+    <input class="w3-input w3-border w3-round" name="o_mentor" style="width:100%" value="{{station_object.station_address}}" readonly></input></label></p>
+
+  <p class="formfield" >
+    <label for="task5" vertical-align= "middle">Organization Mentor :
+    <input class="w3-input w3-border w3-round" name="organization_mentor" style="width:100%" value="{{student_object.organization_mentor}}"
+    {%if is_student == 0 %} readonly {%endif%}></input></label></p>
+
+	<p class="formfield" >
+    <label for="task3" vertical-align= "middle">Organization Email ID :
+    <input class="w3-input w3-border w3-round" name="organization_email_id" style="width:100%" value="{{student_object.organization_email_id}}"
+    {%if is_student == 0 %} readonly {%endif%}></input></label></p>
+
+	<p class="formfield" >
+    <label for="task4" vertical-align= "middle">Organizaion Contact :
+    <input class="w3-input w3-border w3-round" name="organization_contact" style="width:100%" value="{{student_object.organization_contact}}"
+    {%if is_student == 0 %} readonly {%endif%}></input></label></p>
+  {%if is_student == 1 %}
+  <p align="right" ><button type="submit" name="submit_student" value="submit_student">Save</button></p>
+  {%endif%}
+
+
+  </fieldset>
+</form>
+<br><br>
+
+
+<br><br>
+{% if hide_student == 0%}
+  <form method="post" >
+    {% csrf_token %}
+    <fieldset>
+      <legend><h2>Download Diary</h2></legend><br>
+      PS Diary can be downloaded from here.
+      <p align="right" ><input type="submit"  name="downloadDiary" value="Download Diary"></p><br>
+
+    </fieldset>
+  </form>
+{% endif %}
+
+<br><br>
+
+
+  </div>
+
+<div class="footer">
+      <p style="font-size: 12px">Copyright © 2019. All Rights Reserved. <a href="/dev_page">Meet the Creators</a></p>      
+</div>
+
+</div>
+</div>
+
+
+{% endblock %}

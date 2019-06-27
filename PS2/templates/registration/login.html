@@ -1,0 +1,31 @@
+{% extends 'PS2/base.html' %}
+{% load static %}
+{% block header %}
+
+<!-- <div class="batch" style="text-align:center; color: #2962FF; position: relative;">
+  <p><br>Batch-{{ form.current_batch }}</p>
+</div> -->
+{% endblock %}
+{% block form_render %}
+    <div class="header">
+      <h1 style="color: #2962FF ; font-size: 28px; "><div style="font-size: 20px; font-weight: normal; padding-bottom: 200px;">Batch-{{ form.current_batch }}</div>BITS PS Diary</h1>
+    </div>
+
+
+  <img src="{% static 'PS2/Images/logo.gif' %}" class="image">
+    <!-- <h1> a </h1> -->
+    {% if form.errors %}
+      <p style="color:red ; font-size: 13px;" >Your username and password didn't match. Please try again.</p>
+      <br>
+    {% endif %}
+    <form method="post" action =".">
+        {% csrf_token %}
+
+        <p>Username</p>
+        <input type="text" name="username" value="" placeholder="Enter Username" required/>
+        <p>Password</p>
+        <input type="password" name="password" placeholder="Enter Password" required/>
+        <div class="button"><button type="submit" style="font-size: 16px;">Login</button></div>
+        <div class="forgotPass"><a href="/PS2/password_reset">Forgot Password</a></div>
+    </form>
+{% endblock %}

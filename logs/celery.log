@@ -1,0 +1,631 @@
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to sudo /home/osboxes/myproject: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to sudo /home/osboxes/myproject: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to sudo /home/osboxes/myproject: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to sudo /home/osboxes/myproject: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /home/osboxes/myproject: EACCES
+supervisor: child process was not spawned
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/platforms.py:801: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  uid=uid, euid=euid, gid=gid, egid=egid,
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/backends/amqp.py:67: CPendingDeprecationWarning: 
+    The AMQP result backend is scheduled for deprecation in     version 4.0 and removal in version v5.0.     Please use RPC backend or a persistent backend.
+
+  alternative='Please use RPC backend or a persistent backend.')
+[2019-04-09 20:57:27,860: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 2.00 seconds...
+
+[2019-04-09 20:57:29,916: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 4.00 seconds...
+
+[2019-04-09 20:57:33,945: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 6.00 seconds...
+
+[2019-04-09 20:57:40,010: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 8.00 seconds...
+
+[2019-04-09 20:57:48,054: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 10.00 seconds...
+
+[2019-04-09 20:57:58,112: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 12.00 seconds...
+
+[2019-04-09 20:58:10,185: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 14.00 seconds...
+
+[2019-04-09 20:58:24,256: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 16.00 seconds...
+
+[2019-04-09 20:58:40,352: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 18.00 seconds...
+
+[2019-04-09 20:58:58,435: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 20.00 seconds...
+
+[2019-04-09 20:59:18,533: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 22.00 seconds...
+
+[2019-04-09 20:59:40,679: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 24.00 seconds...
+
+[2019-04-09 21:00:04,875: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 26.00 seconds...
+
+[2019-04-09 21:00:31,051: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 28.00 seconds...
+
+[2019-04-09 21:00:59,281: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 30.00 seconds...
+
+[2019-04-09 21:01:29,447: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 32.00 seconds...
+
+[2019-04-09 21:02:01,683: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 32.00 seconds...
+
+[2019-04-09 21:02:33,867: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 32.00 seconds...
+
+[2019-04-09 21:03:06,008: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.
+Trying again in 32.00 seconds...
+
+
+worker: Warm shutdown (MainProcess)
+[2019-04-09 21:03:30,331: WARNING/MainProcess] Traceback (most recent call last):
+[2019-04-09 21:03:30,331: WARNING/MainProcess] File "/usr/lib64/python3.6/multiprocessing/util.py", line 262, in _run_finalizers
+    finalizer()
+[2019-04-09 21:03:30,332: WARNING/MainProcess] File "/usr/lib64/python3.6/multiprocessing/util.py", line 186, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+[2019-04-09 21:03:30,332: WARNING/MainProcess] File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/billiard/pool.py", line 1621, in _terminate_pool
+    cls._help_stuff_finish(*help_stuff_finish_args)
+[2019-04-09 21:03:30,332: WARNING/MainProcess] File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/concurrency/asynpool.py", line 1296, in _help_stuff_finish
+    fileno_to_proc[fd].inq._reader.recv()
+[2019-04-09 21:03:30,332: WARNING/MainProcess] File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/billiard/connection.py", line 281, in recv
+    return ForkingPickler.loadbuf(buf)
+[2019-04-09 21:03:30,332: WARNING/MainProcess] File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/billiard/reduction.py", line 61, in loadbuf
+    return cls.loads(buf.getbuffer())
+[2019-04-09 21:03:30,333: WARNING/MainProcess] EOFError: Ran out of input
+ 
+ -------------- celery@osboxes v4.3.0 (rhubarb)
+---- **** ----- 
+--- * ***  * -- Linux-3.10.0-957.10.1.el7.x86_64-x86_64-with-centos-7.6.1810-Core 2019-04-09 20:57:27
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         PS_DIARY:0x7f57b4bdb128
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     amqp://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . PS2.tasks.PopulateDataBase
+  . PS_DIARY.celery.debug_task
+
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/platforms.py:801: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  uid=uid, euid=euid, gid=gid, egid=egid,
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/backends/amqp.py:67: CPendingDeprecationWarning: 
+    The AMQP result backend is scheduled for deprecation in     version 4.0 and removal in version v5.0.     Please use RPC backend or a persistent backend.
+
+  alternative='Please use RPC backend or a persistent backend.')
+[2019-04-10 04:31:01,353: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2019-04-10 04:31:03,364: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2019-04-10 04:31:07,426: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2019-04-10 04:31:07,446: INFO/MainProcess] mingle: searching for neighbors
+[2019-04-10 04:31:08,546: INFO/MainProcess] mingle: all alone
+[2019-04-10 04:31:08,992: WARNING/MainProcess] /home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-04-10 04:31:08,992: INFO/MainProcess] celery@osboxes ready.
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@osboxes v4.3.0 (rhubarb)
+---- **** ----- 
+--- * ***  * -- Linux-3.10.0-957.10.1.el7.x86_64-x86_64-with-centos-7.6.1810-Core 2019-04-10 04:31:01
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         PS_DIARY:0x7f52f1ee3128
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     amqp://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . PS2.tasks.PopulateDataBase
+  . PS_DIARY.celery.debug_task
+
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/platforms.py:801: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  uid=uid, euid=euid, gid=gid, egid=egid,
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/backends/amqp.py:67: CPendingDeprecationWarning: 
+    The AMQP result backend is scheduled for deprecation in     version 4.0 and removal in version v5.0.     Please use RPC backend or a persistent backend.
+
+  alternative='Please use RPC backend or a persistent backend.')
+[2019-04-10 04:39:18,869: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2019-04-10 04:39:20,896: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2019-04-10 04:39:24,935: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2019-04-10 04:39:24,946: INFO/MainProcess] mingle: searching for neighbors
+[2019-04-10 04:39:26,010: INFO/MainProcess] mingle: all alone
+[2019-04-10 04:39:26,042: WARNING/MainProcess] /home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-04-10 04:39:26,042: INFO/MainProcess] celery@osboxes ready.
+[2019-04-10 04:45:49,469: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[b91e880d-487e-4b6a-9d02-65bede45b778]
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/platforms.py:801: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  uid=uid, euid=euid, gid=gid, egid=egid,
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/backends/amqp.py:67: CPendingDeprecationWarning: 
+    The AMQP result backend is scheduled for deprecation in     version 4.0 and removal in version v5.0.     Please use RPC backend or a persistent backend.
+
+  alternative='Please use RPC backend or a persistent backend.')
+[2019-04-10 04:46:07,346: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[b91e880d-487e-4b6a-9d02-65bede45b778] succeeded in 17.87569301800005s: {'current': 99, 'total': 99}
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@osboxes v4.3.0 (rhubarb)
+---- **** ----- 
+--- * ***  * -- Linux-3.10.0-957.10.1.el7.x86_64-x86_64-with-centos-7.6.1810-Core 2019-04-10 04:39:18
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         PS_DIARY:0x7f5897aef128
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     amqp://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . PS2.tasks.PopulateDataBase
+  . PS_DIARY.celery.debug_task
+
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/platforms.py:801: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  uid=uid, euid=euid, gid=gid, egid=egid,
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/backends/amqp.py:67: CPendingDeprecationWarning: 
+    The AMQP result backend is scheduled for deprecation in     version 4.0 and removal in version v5.0.     Please use RPC backend or a persistent backend.
+
+  alternative='Please use RPC backend or a persistent backend.')
+[2019-04-10 05:45:53,676: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2019-04-10 05:45:55,695: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2019-04-10 05:45:59,746: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2019-04-10 05:46:05,799: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2019-04-10 05:46:05,826: INFO/MainProcess] mingle: searching for neighbors
+[2019-04-10 05:46:07,014: INFO/MainProcess] mingle: all alone
+[2019-04-10 05:46:07,063: WARNING/MainProcess] /home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-04-10 05:46:07,063: INFO/MainProcess] celery@osboxes ready.
+[2019-04-10 05:50:47,014: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[c89e5439-7866-4583-b5d8-04a88a9a615c]
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/platforms.py:801: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  uid=uid, euid=euid, gid=gid, egid=egid,
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/backends/amqp.py:67: CPendingDeprecationWarning: 
+    The AMQP result backend is scheduled for deprecation in     version 4.0 and removal in version v5.0.     Please use RPC backend or a persistent backend.
+
+  alternative='Please use RPC backend or a persistent backend.')
+[2019-04-10 05:51:23,217: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[c89e5439-7866-4583-b5d8-04a88a9a615c] succeeded in 36.201251232999994s: {'current': 99, 'total': 99}
+[2019-04-10 06:43:14,389: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[c34fb9df-3df2-4324-aaba-6532999385f7]
+[2019-04-10 06:43:52,994: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[c34fb9df-3df2-4324-aaba-6532999385f7] succeeded in 38.60410750300025s: {'current': 99, 'total': 99}
+[2019-04-10 09:46:23,164: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[45c6b0c4-3786-467d-9a1e-ea574b5efdd5]
+[2019-04-10 09:47:00,370: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[45c6b0c4-3786-467d-9a1e-ea574b5efdd5] succeeded in 37.20424283700049s: {'current': 99, 'total': 99}
+[2019-04-10 10:05:41,218: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[619da5d3-db16-4bfc-a779-f743b52ac95d]
+[2019-04-10 10:06:04,272: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[b77c1497-5b37-4b9d-9335-9762bf2be548]
+[2019-04-10 10:07:16,830: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[619da5d3-db16-4bfc-a779-f743b52ac95d] succeeded in 95.61036836599851s: {'current': 99, 'total': 99}
+[2019-04-10 10:07:17,222: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[ee66c545-3ad0-4f54-901c-7d14d99a119f]
+[2019-04-10 10:08:52,496: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[f2d6ef36-7911-48c7-ade5-5add9ef72e43]
+[2019-04-10 10:09:05,917: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[102e12c5-15be-4939-a159-f9f03c5f47f7]
+[2019-04-10 10:09:56,199: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[b77c1497-5b37-4b9d-9335-9762bf2be548] succeeded in 159.3477027709996s: {'current': 99, 'total': 99}
+[2019-04-10 10:10:03,213: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[aa9c360b-33f3-48c1-a2d2-165153024211]
+[2019-04-10 10:11:49,838: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[5d231fed-d826-4a62-aa07-493787f055a5]
+[2019-04-10 10:12:48,298: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[ee66c545-3ad0-4f54-901c-7d14d99a119f] succeeded in 172.09661198600043s: {'current': 99, 'total': 99}
+[2019-04-10 10:14:17,827: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[6f3401d7-129c-4bea-8f0d-f2ed82cd3f51]
+[2019-04-10 10:15:11,552: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[f2d6ef36-7911-48c7-ade5-5add9ef72e43] succeeded in 143.25058879000062s: {'current': 99, 'total': 99}
+[2019-04-10 10:17:19,927: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[102e12c5-15be-4939-a159-f9f03c5f47f7] succeeded in 128.37215408999873s: {'current': 99, 'total': 99}
+[2019-04-10 10:17:34,566: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[b2218d03-5068-40ca-878f-17ac360c3383]
+[2019-04-10 10:19:56,685: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[aa9c360b-33f3-48c1-a2d2-165153024211] succeeded in 156.75551097999778s: {'current': 99, 'total': 99}
+
+worker: Warm shutdown (MainProcess)
+[2019-04-10 10:21:42,267: ERROR/MainProcess] Process 'ForkPoolWorker-1' pid:5971 exited with 'signal 15 (SIGTERM)'
+[2019-04-10 10:21:42,419: ERROR/MainProcess] Task handler raised error: WorkerLostError('Worker exited prematurely: signal 15 (SIGTERM).',)
+Traceback (most recent call last):
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/worker/worker.py", line 205, in start
+    self.blueprint.start(self)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/bootsteps.py", line 369, in start
+    return self.obj.start()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/worker/loops.py", line 91, in asynloop
+    next(loop)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/kombu/asynchronous/hub.py", line 306, in create_loop
+    events = poll(poll_timeout)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/kombu/utils/eventio.py", line 84, in poll
+    return self._epoll.poll(timeout if timeout is not None else -1)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/apps/worker.py", line 284, in _handle_request
+    raise exc(exitcode)
+celery.exceptions.WorkerShutdown: 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/billiard/pool.py", line 1226, in mark_as_worker_lost
+    human_status(exitcode)),
+billiard.exceptions.WorkerLostError: Worker exited prematurely: signal 15 (SIGTERM).
+ 
+ -------------- celery@osboxes v4.3.0 (rhubarb)
+---- **** ----- 
+--- * ***  * -- Linux-3.10.0-957.10.1.el7.x86_64-x86_64-with-centos-7.6.1810-Core 2019-04-10 05:45:53
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         PS_DIARY:0x7f9096dbe160
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     amqp://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . PS2.tasks.PopulateDataBase
+  . PS_DIARY.celery.debug_task
+
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/platforms.py:801: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  uid=uid, euid=euid, gid=gid, egid=egid,
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/backends/amqp.py:67: CPendingDeprecationWarning: 
+    The AMQP result backend is scheduled for deprecation in     version 4.0 and removal in version v5.0.     Please use RPC backend or a persistent backend.
+
+  alternative='Please use RPC backend or a persistent backend.')
+[2019-04-10 17:46:04,485: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2019-04-10 17:46:06,510: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2019-04-10 17:46:10,561: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2019-04-10 17:46:16,802: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2019-04-10 17:46:16,905: INFO/MainProcess] mingle: searching for neighbors
+[2019-04-10 17:46:18,162: INFO/MainProcess] mingle: all alone
+[2019-04-10 17:46:18,241: WARNING/MainProcess] /home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-04-10 17:46:18,241: INFO/MainProcess] celery@osboxes ready.
+[2019-04-10 17:46:18,243: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[6f3401d7-129c-4bea-8f0d-f2ed82cd3f51]
+[2019-04-10 17:46:18,244: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[b2218d03-5068-40ca-878f-17ac360c3383]
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/platforms.py:801: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  uid=uid, euid=euid, gid=gid, egid=egid,
+/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/backends/amqp.py:67: CPendingDeprecationWarning: 
+    The AMQP result backend is scheduled for deprecation in     version 4.0 and removal in version v5.0.     Please use RPC backend or a persistent backend.
+
+  alternative='Please use RPC backend or a persistent backend.')
+[2019-04-10 17:46:19,621: ERROR/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[6f3401d7-129c-4bea-8f0d-f2ed82cd3f51] raised unexpected: OperationalError(2002, "Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)")
+Traceback (most recent call last):
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/MySQLdb/__init__.py", line 84, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 164, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/osboxes/myproject/PS2/tasks.py", line 13, in PopulateDataBase
+    management.call_command('clearModels')
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/core/management/__init__.py", line 148, in call_command
+    return command.execute(*args, **defaults)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/home/osboxes/myproject/PS2/management/commands/clearModels.py", line 15, in handle
+    self._create()
+  File "/home/osboxes/myproject/PS2/management/commands/clearModels.py", line 7, in _create
+    Mentor.objects.all().delete()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/query.py", line 710, in delete
+    collector.collect(del_query)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/deletion.py", line 192, in collect
+    reverse_dependency=reverse_dependency)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/deletion.py", line 88, in add
+    if not objs:
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/query.py", line 278, in __bool__
+    self._fetch_all()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1095, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 256, in cursor
+    return self._cursor()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 233, in _cursor
+    self.ensure_connection()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/MySQLdb/__init__.py", line 84, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 164, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)")
+[2019-04-10 17:46:19,653: ERROR/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[b2218d03-5068-40ca-878f-17ac360c3383] raised unexpected: OperationalError(2002, "Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)")
+Traceback (most recent call last):
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/MySQLdb/__init__.py", line 84, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 164, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/osboxes/myproject/PS2/tasks.py", line 13, in PopulateDataBase
+    management.call_command('clearModels')
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/core/management/__init__.py", line 148, in call_command
+    return command.execute(*args, **defaults)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/home/osboxes/myproject/PS2/management/commands/clearModels.py", line 15, in handle
+    self._create()
+  File "/home/osboxes/myproject/PS2/management/commands/clearModels.py", line 7, in _create
+    Mentor.objects.all().delete()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/query.py", line 710, in delete
+    collector.collect(del_query)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/deletion.py", line 192, in collect
+    reverse_dependency=reverse_dependency)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/deletion.py", line 88, in add
+    if not objs:
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/query.py", line 278, in __bool__
+    self._fetch_all()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1095, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 256, in cursor
+    return self._cursor()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 233, in _cursor
+    self.ensure_connection()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/MySQLdb/__init__.py", line 84, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/osboxes/myproject/myprojectenv/lib/python3.6/site-packages/MySQLdb/connections.py", line 164, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)")
+[2019-04-10 17:53:08,965: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[f2b738aa-2ef2-4777-8ac5-5b1b85e2c465]
+[2019-04-10 17:53:43,419: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[f2b738aa-2ef2-4777-8ac5-5b1b85e2c465] succeeded in 34.45292843899995s: {'current': 99, 'total': 99}
+[2019-04-10 18:09:50,139: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[df465bf2-7c68-45af-8eff-4d957ec26c2a]
+[2019-04-10 18:10:33,742: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[df465bf2-7c68-45af-8eff-4d957ec26c2a] succeeded in 43.60137712400001s: {'current': 99, 'total': 99}
+[2019-04-10 19:22:55,029: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[2a25ff88-0165-4db4-ae49-84bac22c2741]
+[2019-04-10 19:23:13,902: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[2a25ff88-0165-4db4-ae49-84bac22c2741] succeeded in 18.872267339000246s: {'current': 99, 'total': 99}
+[2019-04-10 19:25:31,874: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[9e42d909-f2ed-4f23-8b66-d09f9c826318]
+[2019-04-10 19:25:49,647: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[9e42d909-f2ed-4f23-8b66-d09f9c826318] succeeded in 17.771757461999186s: {'current': 99, 'total': 99}
+[2019-04-10 19:26:41,651: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[4198030d-2f28-4308-af15-8c0c0e2f5327]
+[2019-04-10 19:27:00,540: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[4198030d-2f28-4308-af15-8c0c0e2f5327] succeeded in 18.888281599999573s: {'current': 99, 'total': 99}
+[2019-04-10 19:27:29,419: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[738f47ef-b4ee-4f7c-8bfc-ffa77b4d1b7f]
+[2019-04-10 19:27:50,353: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[738f47ef-b4ee-4f7c-8bfc-ffa77b4d1b7f] succeeded in 20.93342308299998s: {'current': 99, 'total': 99}
+[2019-04-10 19:31:16,152: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[0bba2684-9a2e-4c4a-a39a-e5a40591ab4f]
+[2019-04-10 19:31:33,802: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[0bba2684-9a2e-4c4a-a39a-e5a40591ab4f] succeeded in 17.64920790299948s: {'current': 99, 'total': 99}
+[2019-04-10 19:33:47,868: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[e235d8d7-aad3-42c9-8a76-334a1bef25bc]
+[2019-04-10 19:34:04,639: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[e235d8d7-aad3-42c9-8a76-334a1bef25bc] succeeded in 16.770311967999987s: {'current': 99, 'total': 99}
+[2019-04-10 19:37:01,613: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[06fd4645-38d1-4897-92f1-84c2cddf52f4]
+[2019-04-10 19:37:18,725: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[06fd4645-38d1-4897-92f1-84c2cddf52f4] succeeded in 17.111624908000522s: {'current': 99, 'total': 99}
+[2019-04-10 19:38:10,625: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[3c96897e-78f3-4b34-892c-a212ad9ed49e]
+[2019-04-10 19:38:28,037: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[3c96897e-78f3-4b34-892c-a212ad9ed49e] succeeded in 17.41113274700001s: {'current': 99, 'total': 99}
+[2019-04-10 19:40:17,157: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[137ff7e5-ef6d-4848-a760-ff4ef3df20d6]
+[2019-04-10 19:40:32,989: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[137ff7e5-ef6d-4848-a760-ff4ef3df20d6] succeeded in 15.83110327400027s: {'current': 99, 'total': 99}
+[2019-04-10 20:24:13,136: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[cbe25d31-8fb1-47fc-a38c-1347ba3d9435]
+[2019-04-10 20:24:22,679: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[780c1353-21fd-4b90-9ac7-5e0d803c1c47]
+[2019-04-10 20:24:30,286: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[cbe25d31-8fb1-47fc-a38c-1347ba3d9435] succeeded in 17.149070352001218s: {'current': 99, 'total': 99}
+[2019-04-10 20:24:45,487: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[780c1353-21fd-4b90-9ac7-5e0d803c1c47] succeeded in 15.199970283001676s: {'current': 99, 'total': 99}
+[2019-04-10 20:47:19,930: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[61b9f2e7-1fb8-475e-9d9e-d137e912edc1]
+[2019-04-10 20:47:36,182: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[61b9f2e7-1fb8-475e-9d9e-d137e912edc1] succeeded in 16.251220732001457s: {'current': 99, 'total': 99}
+[2019-04-10 20:51:24,637: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[b490e221-0fe7-4ed8-a3f9-9597e11c9543]
+[2019-04-10 20:51:42,465: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[b490e221-0fe7-4ed8-a3f9-9597e11c9543] succeeded in 17.82716541800073s: {'current': 99, 'total': 99}
+[2019-04-10 20:53:16,926: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[e2f3702f-ee95-4d17-b823-666707a6a140]
+[2019-04-10 20:53:34,791: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[e2f3702f-ee95-4d17-b823-666707a6a140] succeeded in 17.864115233998746s: {'current': 99, 'total': 99}
+[2019-04-10 20:55:24,655: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[9d06323d-7ccb-4b06-be06-98cf9eef0199]
+[2019-04-10 20:55:42,061: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[9d06323d-7ccb-4b06-be06-98cf9eef0199] succeeded in 17.40552828s: {'current': 99, 'total': 99}
+[2019-04-10 21:06:46,775: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[d5b37755-e2f3-40ea-9a83-4e00a9ee7bff]
+[2019-04-10 21:07:58,351: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[d5b37755-e2f3-40ea-9a83-4e00a9ee7bff] succeeded in 71.57445892000032s: {'current': 99, 'total': 99}
+[2019-04-10 21:16:56,220: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[8a3adce0-0bab-42f6-96b2-5b14070b5958]
+[2019-04-10 21:18:07,851: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[8a3adce0-0bab-42f6-96b2-5b14070b5958] succeeded in 71.62946099299916s: {'current': 99, 'total': 99}
+[2019-04-10 21:19:26,141: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[ef8bd02e-a373-428f-90f7-719e2b361053]
+[2019-04-10 21:20:38,348: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[ef8bd02e-a373-428f-90f7-719e2b361053] succeeded in 72.20614876000036s: {'current': 99, 'total': 99}
+[2019-04-10 21:23:30,326: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[be22e20e-e5f8-44a7-bec3-35e3ef20e0e6]
+[2019-04-10 21:23:31,768: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[be22e20e-e5f8-44a7-bec3-35e3ef20e0e6] succeeded in 1.4418569310000748s: {'current': 3, 'total': 3}
+[2019-04-10 21:30:11,472: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[6c5da84c-c5a8-4a8e-bc7c-273a870af465]
+[2019-04-10 21:30:13,017: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[6c5da84c-c5a8-4a8e-bc7c-273a870af465] succeeded in 1.5446884100001625s: {'current': 3, 'total': 3}
+[2019-04-10 21:30:31,245: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[b8843664-8034-49d5-abff-b53b3741fcf2]
+[2019-04-10 21:30:32,587: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[b8843664-8034-49d5-abff-b53b3741fcf2] succeeded in 1.3414248879998922s: {'current': 3, 'total': 3}
+[2019-04-10 21:32:32,815: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[c9aae6d9-e20d-4c91-aca6-a9b7f0758a49]
+[2019-04-10 21:32:34,067: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[c9aae6d9-e20d-4c91-aca6-a9b7f0758a49] succeeded in 1.2506128629993327s: {'current': 3, 'total': 3}
+[2019-04-10 21:33:22,752: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[16811538-553b-4bb0-8b3b-b71c8c0c92ff]
+[2019-04-10 21:33:24,031: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[16811538-553b-4bb0-8b3b-b71c8c0c92ff] succeeded in 1.279040081999483s: {'current': 3, 'total': 3}
+[2019-04-10 21:33:37,472: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[6358a9b8-be13-4d44-8496-92b852068855]
+[2019-04-10 21:33:39,261: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[6358a9b8-be13-4d44-8496-92b852068855] succeeded in 1.7884487200008152s: {'current': 3, 'total': 3}
+[2019-04-10 21:46:20,582: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[68df1788-bd28-4ca7-a5ef-45abcf658688]
+[2019-04-10 21:46:21,839: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[68df1788-bd28-4ca7-a5ef-45abcf658688] succeeded in 1.2568518749994837s: {'current': 3, 'total': 3}
+[2019-04-10 21:49:02,275: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[2c6e5a4b-250b-4f99-8d82-3d7586f091fa]
+[2019-04-10 21:49:03,581: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[2c6e5a4b-250b-4f99-8d82-3d7586f091fa] succeeded in 1.3043199849998928s: {'current': 3, 'total': 3}
+[2019-04-10 21:50:48,618: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[e9fbb2cb-96a0-49d9-96c8-7081cb6b6b54]
+[2019-04-10 21:50:49,974: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[e9fbb2cb-96a0-49d9-96c8-7081cb6b6b54] succeeded in 1.3550997690017539s: {'current': 3, 'total': 3}
+[2019-04-10 21:55:18,092: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[9ab40a2e-3dad-4159-90de-6113bb1ada29]
+[2019-04-10 21:55:19,846: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[9ab40a2e-3dad-4159-90de-6113bb1ada29] succeeded in 1.753734201000043s: {'current': 3, 'total': 3}
+[2019-04-10 21:56:00,181: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[b379aad9-590a-4cef-b1a6-3dfabce38669]
+[2019-04-10 21:56:01,463: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[b379aad9-590a-4cef-b1a6-3dfabce38669] succeeded in 1.2811465859995224s: {'current': 3, 'total': 3}
+[2019-04-10 21:58:12,510: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[996a4b9a-0488-4cb3-8867-6a5994704c34]
+[2019-04-10 21:58:13,938: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[996a4b9a-0488-4cb3-8867-6a5994704c34] succeeded in 1.4269644640007755s: {'current': 3, 'total': 3}
+[2019-04-10 22:00:01,926: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[8e7395f8-9e4a-4354-8863-e45fe5d1cbfb]
+[2019-04-10 22:00:03,108: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[8e7395f8-9e4a-4354-8863-e45fe5d1cbfb] succeeded in 1.1813828129998s: {'current': 3, 'total': 3}
+[2019-04-10 22:00:27,380: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[d505f931-cde4-4e12-bbcb-abecfb0d103d]
+[2019-04-10 22:00:29,140: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[d505f931-cde4-4e12-bbcb-abecfb0d103d] succeeded in 1.758937643999161s: {'current': 3, 'total': 3}
+[2019-04-10 22:03:46,914: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[bc92ac66-11f1-4ffd-91a6-bf2e11090edb]
+[2019-04-10 22:03:48,188: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[bc92ac66-11f1-4ffd-91a6-bf2e11090edb] succeeded in 1.2732428449999134s: {'current': 3, 'total': 3}
+[2019-04-10 22:04:08,479: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[92ad606d-d773-4c2b-b772-8426969cfdf7]
+[2019-04-10 22:04:09,956: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[92ad606d-d773-4c2b-b772-8426969cfdf7] succeeded in 1.4759775460006495s: {'current': 3, 'total': 3}
+[2019-04-10 22:06:50,092: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[5bde7ea7-e2de-4da8-a4fc-4ceb4d34fa9d]
+[2019-04-10 22:06:51,724: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[5bde7ea7-e2de-4da8-a4fc-4ceb4d34fa9d] succeeded in 1.630979784000374s: {'current': 3, 'total': 3}
+[2019-04-10 22:10:38,696: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[5fa1e817-460c-4d2a-b0b7-508ae4913998]
+[2019-04-10 22:10:40,019: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[5fa1e817-460c-4d2a-b0b7-508ae4913998] succeeded in 1.322540683000625s: {'current': 3, 'total': 3}
+[2019-04-10 22:44:30,437: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[e2f7c344-a647-4fd0-97eb-779f317871ba]
+[2019-04-10 22:44:33,654: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[e2f7c344-a647-4fd0-97eb-779f317871ba] succeeded in 3.2156066239986103s: {'current': 3, 'total': 3}
+[2019-04-10 22:46:44,241: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[1f45c8e7-8b09-4bb8-8224-b71f64773a9a]
+[2019-04-10 22:46:48,568: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[1f45c8e7-8b09-4bb8-8224-b71f64773a9a] succeeded in 4.325832270002138s: {'current': 3, 'total': 3}
+[2019-04-10 22:49:16,532: INFO/MainProcess] Received task: PS2.tasks.PopulateDataBase[648b6966-a753-44fc-8c3d-49c48d375c40]
+[2019-04-10 22:49:20,762: INFO/ForkPoolWorker-1] Task PS2.tasks.PopulateDataBase[648b6966-a753-44fc-8c3d-49c48d375c40] succeeded in 4.227978860999428s: {'current': 3, 'total': 3}

@@ -1,0 +1,120 @@
+{% extends 'PS2/student_base.html' %}
+{% block weeks_data %}
+
+{% load crispy_forms_tags %}
+<div class="Entry" id="wrapper2">
+
+
+
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+  <a href="/PS2/weeks/0" class="w3-bar-item w3-button">New Entry  <i class="fa fa-unlock" style="font-size:30px;color:green"></i></a>
+  <a href="/PS2/weeks/1" class="w3-bar-item w3-button">Entry 1</a>
+  <a href="/PS2/weeks/2" class="w3-bar-item w3-button">Entry 2</a>
+</div>
+
+
+<div class="w3-main" style="margin-left:200px">
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+
+
+  <div class="w3-container">
+    <h1>{%if week_data.week_no == 0 %}
+<p><h2><center>New Entry </h2></p>
+{%else%}
+<p><h2><center>Entry {{week_data.week_no}}</h2></p>
+{%endif%}</h1>
+  </div>
+</div>
+
+
+<div class="w3-container">
+<div class="form">
+
+<br><br>
+<form method="post" action ="/PS2/weeks/{{week_data.week_no}}" >
+  {% csrf_token %}
+  <fieldset>
+    {%if week_data.lock == 0 or week_data.week_no == 0 %}
+      <legend>Enter Data</legend><br>
+    {%else%}
+      <legend>Locked</legend><br>
+    {%endif%}
+	 {{ form|crispy }}
+	<p class="formfield" >
+    <label for="task" vertical-align= "middle">Tasks Planned for Week:
+    <textarea name="tasksplanned" {%if week_data.lock == 1 %} style= "background-color:#DCDCDC" readonly {%endif%}>{{week_data.tasksplanned}}</textarea></label></p>
+    <br>
+	<br><br>
+	<p class="formfield">
+    <label  for="task1">Tasks Completed:
+    <textarea name="taskscompleted" {%if week_data.lock == 1 %} style= "background-color:#DCDCDC" readonly {%endif%}>{{week_data.taskscompleted}}</textarea></label></p>
+    <br>
+	<br><br>
+
+	<p class="formfield">
+	<label  for="task2">Variation in Plan & Plan to Overcome them(if any):
+    <textarea name="variation" {%if week_data.lock == 1 %} style= "background-color:#DCDCDC" readonly {%endif%} >{{week_data.variation}}</textarea></label></p>
+    <br>
+	<br><br>
+
+	<p class="formfield">
+	<label  for="task3">Activities for Next Week:
+    <textarea name="nextweek" {%if week_data.lock == 1 %} style= "background-color:#DCDCDC" readonly {%endif%}>{{week_data.nextweek}}</textarea></label></p>
+    <br>
+	<br><br>
+
+	<p class="formfield">
+	<label  for="task4">Learning Outcomes:
+    <textarea name="learning" {%if week_data.lock == 1 %} style= "background-color:#DCDCDC" readonly {%endif%}>{{week_data.learning}}</textarea></label></p>
+    <br>
+	<br><br>
+	<p class="formfield">
+	<label  for="task5">Equipments/Software Used/Learnt:
+    <textarea name="equipments" {%if week_data.lock == 1 %} style= "background-color:#DCDCDC" readonly {%endif%}>{{week_data.equipments}}</textarea></label></p>
+    <br>
+	<br><br>
+	<br>
+    {%if week_data.lock == 1%}
+      <p align="right" ><button type="goBack" value="goBack">Go Back</button></p>
+    {%else %}
+      <p align="right" ><button type="submit" value="Submit">Submit</button></p>
+    {%endif%}
+
+
+  </fieldset>
+</form>
+<br><br>
+
+<form method="post" action ="/PS2/weeks/{{week_data.week_no}}" >
+  {% csrf_token %}
+  <fieldset>
+    <legend>Remarks</legend><br>
+   {{form|crispy}}
+  <p class="formfield" >
+    <label  for="comments">Comments:
+    <textarea name="comments" style= "background-color:#DCDCDC" readonly>{{week_data.comment}}</textarea></label></p>
+    <br><br><br><br>
+
+  <!-- <p align="right"><input type="submit" value="Submit"></p> -->
+
+  </fieldset>
+</form>
+</div>
+</div>
+</div>
+
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+{% endblock %}

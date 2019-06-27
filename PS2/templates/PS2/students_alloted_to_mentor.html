@@ -1,0 +1,25 @@
+{% extends 'PS2/mentor_base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="Entry" id="wrapper">
+  <h2><center>{{station}}</h2>
+
+<!-- <table id="myTable"> -->
+{% for student in students%}
+
+<button class="students_allocated_to_mentor" onclick="window.location.href='/PS2/mentor/{{station}}/{{student.student_name}}'" style="text-align: left; padding-left: 20%;">{{student.student_name}}  <div style="float: right; padding-right: 20%; ">{{student.student_id}}</div></button><br>
+
+{%endfor%}
+
+<br><br>
+
+<div class="footer">
+      <p style="font-size: 12px">Copyright © 2019. All Rights Reserved. <a href="/dev_page">Meet the Creators</a></p>      
+</div>
+
+</div>
+
+{% endblock %}

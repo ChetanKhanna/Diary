@@ -1,0 +1,94 @@
+{% extends 'PS2/mentor_base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<div class="Entry" id="wrapper">
+<p><h2><center>{{student}} <br> <p >Entry {{enteryNumber}}</p> </h2></p>
+<div class="form">
+
+<form method="get">
+  {% csrf_token %}
+  <fieldset>
+    <legend>Submitted on: {{week.submissionDate}}</legend><br>
+	 {{form|crispy}}
+	<p class="formfield" >
+    <label for="task" vertical-align= "middle">Tasks Planned for Week:
+    <textarea name="tasksplanned" style= "background-color:#DCDCDC" readonly >{{tasksplanned}}</textarea></label></p>
+    <br>
+	<br><br>
+	<p class="formfield">
+    <label  for="task1">Tasks Completed:
+    <textarea name="taskscompleted" style= "background-color:#DCDCDC" readonly>{{taskscompleted}}</textarea></label></p>
+    <br>
+	<br><br>
+
+	<p class="formfield">
+	<label  for="task2">Variation in Plan & Plan to Overcome them(if any):
+    <textarea name="variation" style= "background-color:#DCDCDC" readonly>{{variation}}</textarea></label></p>
+    <br>
+	<br><br>
+
+	<p class="formfield">
+	<label  for="task3">Activities for Next Week:
+    <textarea name="nextweek" style= "background-color:#DCDCDC" readonly>{{nextweek}}</textarea></label></p>
+    <br>
+	<br><br>
+
+	<p class="formfield">
+	<label  for="task4">Learning Outcomes:
+    <textarea name="learning" style= "background-color:#DCDCDC" readonly>{{learning}}</textarea></label></p>
+    <br>
+	<br><br>
+	<p class="formfield">
+	<label  for="task5">Equipments/Software Used/Learnt:
+    <textarea name="equipments" style= "background-color:#DCDCDC" readonly>{{equipments}}</textarea></label></p>
+    <br>
+	<br><br>
+	<br>
+    <!-- <p align="right"><input type="submit" value="Submit"></p> -->
+
+  </fieldset>
+</form>
+<br>
+<br>
+<div class="form">
+
+<form method="post" action ="/PS2/mentor/{{station}}/{{student}}/{{enteryNumber}}" >
+  {% csrf_token %}
+  <fieldset>
+    <legend>Remarks</legend><br>
+   {{form|crispy}}
+  <p class="formfield" >
+    <label  for="comments">Comments:
+    <textarea name="comments" >{{comment}}</textarea></label></p>
+    <br><br><br><br>
+
+
+  <!-- <p align="right"><input style="font-size: 15px;" type="submit" name="Lock" value="Lock"> -->
+ <p align="right">
+  {% if lock == 0 %}
+  <input style="font-size: 15px;" type="submit" name="SubmitAndLock" value="Submit and Lock"></input>
+  {% else %}
+    <input style="font-size: 15px;" type="submit" name="SubmitAndUnlock" value="SubmitAndUnlock"></input>
+  {% endif %}
+  <input style="font-size: 15px;" type="submit" name="Submit" value="Submit"></input><br></p>
+
+  </fieldset>
+</form>
+
+
+
+
+</div>
+<br><br>
+
+<div class="footer">
+      <p style="font-size: 12px">Copyright © 2019. All Rights Reserved. <a href="/dev_page">Meet the Creators</a></p>      
+</div>
+
+</div>
+</div>
+{% endblock %}

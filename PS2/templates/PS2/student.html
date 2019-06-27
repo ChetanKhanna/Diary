@@ -1,0 +1,95 @@
+{% extends 'PS2/student_base.html' %}
+
+{% block content %}
+<div class="Entry" id="wrapper">
+<h2><center>Entries</h2>
+
+
+<table id="myTable">
+  <tr>
+  <td>New Entry</td>
+
+  <td>
+    <div class="icon-bar" style="float: right;">
+      <a class="inactive" href="/PS2/weeks/0"><i class="fa fa-edit"></i></a>
+    </div>
+  </td>
+
+  <td>
+    <div class="icon-bar">
+      <a class="active"><i class="fa fa-unlock"></i></a>
+    </div>
+  </td>
+
+  <td style="text-align:right ;">
+    You Can Enter Your New Data
+  </td>
+  </tr>
+
+  {% for week_no, week_lock in weeks_data%}
+      <tr>
+      <td >Entry {{week_no}}</td>
+
+        <td>
+          <div class="icon-bar" style="float: right;">
+          {%if week_lock == 1 %}
+            <a class="inactive" href=/PS2/weeks/{{week_no}}><i class="fa fa-eye"></i></a>
+          {%else%}
+            <a class="inactive" href="/PS2/weeks/{{week_no}}"><i class="fa fa-edit"></i></a>
+          {%endif%}
+        </div>
+      </td>
+
+      <td >
+        <div class="icon-bar" >
+          {%if week_lock == 1 %}
+            <a class="active0"><i class="fa fa-lock"></i></a>
+          {%else%}
+            <a class="active"><i class="fa fa-unlock"></i></a>
+          {%endif%}
+          </div>
+        </td>
+
+
+      <td style="text-align:right">
+        {%if week_lock == 1 %}
+            Entry Locked by Mentor
+          {%else%}
+            You Can Edit Your Previous Data
+          {%endif%}
+      </td>
+      </tr>
+  {%endfor%}
+</table>
+
+<br><br><br>
+<div class="footer">
+      <p style="font-size: 12px">Copyright © 2019. All Rights Reserved. <a href="/dev_page">Meet the Creators</a></p>      
+</div>
+
+
+</div>
+
+
+<footer id="wrapper_f">
+  <a class="namelink" href="/PS2/student_profile/0/{{student.student_name}}">
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Mentor Details</h2>
+    <p>Name: {{mentor.mentor_name}}</p>
+    <p>Contact: {{mentor.mentor_contact}}</p>
+    <p>Email: {{mentor.mentor_email}}</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Organization Details</h2>
+    <p>Name: {{station.station_name}}</p>
+    <p>Mentor: {{student.organization_mentor}}</p>
+    <p>E-mail: {{student.organization_email_id}}</p>
+    <p>Contact: {{student.organization_contact}}</p>
+    <p>Address: {{station.station_address}}</p>
+  </div>
+</div>
+</a>
+</footer>
+
+{% endblock %}

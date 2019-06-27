@@ -1,0 +1,116 @@
+{% extends 'PS2/website_base.html' %}
+{% load static %}
+{% block header %}
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<!-- <div id="loader"></div> -->
+
+<div class="logo"><img src="{% static 'PS2/Images/logo.gif' %}"/>
+</div>
+<header>
+
+<!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a class="active" style="text-decoration: unset;">PS-Diary</a>
+  </div>
+
+  <!-- Left-aligned links (default) -->
+
+
+
+  <a class="inactive" style="text-decoration: unset;">Admin Page</a>
+
+
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <!--<a href="#search">Search</a>-->
+    <!-- <a class="date">Date/Time: <span id="datetime"></span></a>   -->
+    <a href="/PS2/logout" style="text-decoration: unset;">Logout</a>
+  </div>
+ </div>
+</header>
+
+
+
+<div class="Entry" id="wrapper">
+  <br>
+  
+<!-- <div id="myDiv"> -->
+<p style="text-align: center; color: red; font-size: 18px;">*WARNING: Following links can modify or delete the existing database.</p>
+
+<h2><center>Admin</h2>
+
+<form method="POST" >
+{% csrf_token %}
+<legend><h2>Download Files</h2></legend>
+
+<!-- <div class="dropdown" style="float:left;"> -->
+
+<button type="submit" name="download" value="download"> Download</button>
+</form>
+
+<br><br><br>
+
+<form method="post" enctype="multipart/form-data" >
+<legend><h2>Upload Files</h2></legend>
+
+    
+        {% csrf_token %}
+
+        <input type="file" value="myfile" name="myfile" >
+        <button type="submit" style="float:right;" onclick="">Upload</button>
+
+
+        
+      <!-- {% if uploaded_file_url %}
+        <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+      {% endif %} -->
+
+</form>
+
+
+<br><br><br>
+
+
+
+<form method="POST">
+  {% csrf_token %}
+<legend><h2>Erase Files</h2></legend>
+
+<div class="dropdown" style="float:left;">
+<button onclick="return confirm('Make sure you have downloaded the Database before erasing.\nClick Ok to continue')" name="erase" value="erase" class="btn" style="font-size: 20px; color: red;"  ><i class="fa fa-trash" ></i> Erase</button>
+</div>
+</form>
+
+<div class="footer">
+      <p style="font-size: 12px">Copyright © 2019. All Rights Reserved. <a href="/dev_page">Meet the Creators</a></p>      
+</div>
+
+</div>
+
+
+<!-- This is a test comment -->
+
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block weeks_data %}
+{% endblock %}
+
+{% block footer %}
+
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="{% static 'PS2/Images/favicon.ico' %}" />
+    <link rel="stylesheet" type="text/css" href="{%  static 'PS2/CSS/login.css' %}">
+  </head>
+  <body>
+{% block header %}
+{% endblock %}
+  <div class="loginbox">
+    
+    {% block form_render %}
+    {% endblock %}
+    <div class="footer">
+      <p style="font-size: 12px">Copyright © 2019. All Rights Reserved. <a href="/dev_page">Meet the Creators</a></p>
+      
+    </div>
+  </div>
+  <main>
+    {% block content %}
+    {% endblock %}  
+  </main>
+  
+</body>
+</html>

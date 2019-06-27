@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'PS2/CSS/style.css' %}">
+<title>PS-Diary</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="logo"><img src="{% static 'PS2/Images/logo.png' %}"/>
+</div> 
+<header>
+
+<!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a class="active">PS-Diary</a>
+  </div>
+  
+  <!-- Left-aligned links (default) -->
+  <a >Name</a>
+  <a >Student ID</a>
+  
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <!--<a href="#search">Search</a>-->
+    <a class="date">Date/Time: <span id="datetime"></span></a>
+    <a href="#logout">Logout</a>
+  </div>
+ 
+</header>
+
+
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+
+<h2><center>Weeks</h2>
+
+<button class="Weeks">Week 1</button>
+<div class="panel">
+  <p>Data</p>
+  <div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-unlock"></i></a> 
+  <a href="/PS2/mentor"><i class="fa fa-edit"></i></a>
+  
+  </div>
+</div>
+
+<button class="Weeks">Week 2</button>
+<div class="panel">
+  <p>Data<p>
+  <div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-unlock"></i></a> 
+  <a href="#"><i class="fa fa-edit"></i></a> 
+ 
+  </div>
+</div>
+
+<button class="Weeks">Week 3</button>
+<div class="panel">
+  <p>Data</p>
+  <div class="icon-bar">
+
+  <a class="active" href="#"><i class="fa fa-unlock"></i></a> 
+  <a href="#"><i class="fa fa-edit"></i></a> 
+  
+  </div>
+</div>
+
+<button class="Weeks">Week 4</button>
+<div class="panel">
+  <p>Data</p>
+  <div class="icon-bar">
+
+  <a class="active" href="#"><i class="fa fa-unlock"></i></a> 
+  <a href="#"><i class="fa fa-edit"></i></a> 
+  
+  </div>
+</div>
+
+<button class="Weeks">Week 5</button>
+<div class="panel">
+  <p>Data</p>
+  <div class="icon-bar">
+
+  <a class="active" href="#"><i class="fa fa-unlock"></i></a> 
+  <a href="#"><i class="fa fa-edit"></i></a> 
+  
+  </div>
+</div>
+
+<button class="Weeks">Week 6</button>
+<div class="panel">
+  <p>Data</p>
+  <div class="icon-bar">
+
+  <a class="active" href="#"><i class="fa fa-unlock"></i></a> 
+  <a href="#"><i class="fa fa-edit"></i></a> 
+  
+  </div>
+</div>
+
+<button class="Weeks">Week 7</button>
+<div class="panel">
+  <p>Data</p>
+  <div class="icon-bar">
+
+  <a class="active" href="#"><i class="fa fa-unlock"></i></a> 
+  <a href="#"><i class="fa fa-edit"></i></a> 
+  
+  </div>
+</div>
+
+<button class="Weeks">Week 8</button>
+<div class="panel">
+  <p>Data</p>
+  <div class="icon-bar">
+
+  <a class="active" href="#"><i class="fa fa-unlock"></i></a> 
+  <a href="#"><i class="fa fa-edit"></i></a> 
+  
+  </div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("Weeks");
+var i;
+
+for (i = 0; i < 2; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<br><br>
+<footer>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Mentor Details</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Organization Details</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+</div>
+</footer>
+<div style="padding-left:16px">
+
+</div>
+
+</body>
+</html>

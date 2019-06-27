@@ -1,0 +1,14 @@
+{% extends 'PS2/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block form_render %}
+{% if user.is_authenticated %}
+Hello {{ user.username }}
+<br>
+<a href="/PS2/redirect">Click to go to your Diary.</a><br>
+{% else %}
+  <p>You are not logged in</p>
+  <a href="/PS2/login">Click here to login</a>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'PS2/CSS/style.css' %}">
+<title>PS-Diary</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<header>
+<div id="logo"><img src="{% static 'PS2/Images/logo.png' %}" />
+</div>
+<!-- Top navigation -->
+<div class="topnav">
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a href="#home" class="active">PS-Diary</a>
+  </div>
+
+  <!-- Left-aligned links (default) -->
+  <a href="#name">Name</a>
+  <a href="#studentID">Student ID</a>
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <!--<a href="#search">Search</a>-->
+    <a href="#logout">Logout</a>
+  </div>
+
+</header>
+
+<p align="right">Date/Time: <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+
+<h2><center>Students</h2>
+
+<button class="Students" ><a href="student.html">Student 1</a></button>
+
+
+<button class="Students"><a href="student.html">Student 2</a></button>
+
+
+<button class="Students"><a href="student.html">Student 3</a></button>
+
+</body>

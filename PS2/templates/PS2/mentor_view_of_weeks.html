@@ -1,0 +1,121 @@
+{% extends 'PS2/mentor_base.html' %}
+{% load static %}
+{% block weeks_data %}
+
+<div class="Entry" id="wrapper">
+ <center><!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> --><a class="namelink" href="/PS2/student_profile/0/{{student}}" ><div class="tooltip"><h2>{{student}}</h2><span class="tooltiptext">View Profile</span></div></a>
+ 
+ <br><br>
+
+<!-- <div class="Entry" id="wrapper">
+ <h2><center>{{student}} <a href="/PS2/student_profile" style="font-size: 16px ; vertical-align: top; padding-bottom: 5px; padding-left: 0px;">view profile</a>
+ </h2> -->
+  
+<!-- <table id="myTable"> -->
+<!-- {% if enteries|length == 0 %}
+  <button class="students_allocated_to_mentor" onclick="#">No Enteries</button>
+  <br>
+{% else %}
+  {% for week in weeks %}
+  <button class="students_allocated_to_mentor" onclick="window.location.href='/PS2/mentor/{{station}}/{{student}}/{{forloop.counter}}'">Entry {{forloop.counter}} </button><br>
+      {%if week.lock == 0 %}
+        <button method="post" action ="/PS2/mentor/{{station}}/{{student}}/lock/{{forloop.counter}}" type="lock" class="students_allocated_to_mentor" onclick="window.location.href='/PS2/mentor/{{station}}/{{student}}/lock/{{forloop.counter}}'">LOCK</button><br>
+      {%else%}
+        <button method="post" action ="/PS2/mentor/{{station}}/{{student}}/unlock/{{forloop.counter}}" type="unlock" class="students_allocated_to_mentor" onclick="window.location.href='/PS2/mentor/{{station}}/{{student}}/unlock/{{forloop.counter}}'">UNLOCK</button><br>
+      {%endif%}
+  {% endfor %}
+{% endif %} -->
+
+<table id="myTable">
+  
+  {% if enteries|length == 0 %}
+  <tr>
+    
+    <td style="text-align: center; font-size: 22px;">   No Entries</td>  
+      
+  </tr>
+
+  
+ <!--  <tr>
+    <th>Entries</th>
+    <th> Remarks and Locking</th>
+  </tr> -->
+
+{% else %}
+  <col width="14%">
+  <col width="20%">
+  <col width="2px;">
+  <col width="20%">
+  <col width="20%">
+  <col width="26%">
+ {% for week_no, week_lock, week_submission_date in weeks_data%}
+      <tr>
+      <td style="padding-left: 30px;">Entry {{week_no}}</td>
+
+       <!-- <td style="text-align:left;">      
+        
+            <a href="/PS2/mentor/{{station}}/{{student}}/{{forloop.counter}}">Give Remarks</i></a>
+
+      </td>  -->
+
+      <td style="padding-bottom: 2px;">
+        <div class="icon-bar1" style="float: right;">
+          <a class="inactive" href="/PS2/mentor/{{station}}/{{student}}/{{week_no}}"><i class="fa fa-edit"></i></a>
+        </div>
+      </td>
+
+      <td> </td>
+
+      <td style="padding-bottom: 2px;">
+        <div class="icon-bar1" style="float: left;">
+          {%if week_lock == 1 %}
+            <a class="active1" href="/PS2/mentor/{{station}}/{{student}}/unlock/{{week_no}}"><i class="fa fa-lock"></i></a>
+            
+          {%else%}
+            <a class="active2" href="/PS2/mentor/{{station}}/{{student}}/lock/{{week_no}}"><i class="fa fa-unlock" ></i></a>
+           
+          {%endif%}
+        </div>
+      </td>
+
+      <td style="text-align:left">
+        
+        {%if week_lock == 0 %}
+            <a href="/PS2/mentor/{{station}}/{{student}}/lock/{{week_no}}">Press to Lock</i></a>
+            
+          {%else%}
+           <a href="/PS2/mentor/{{station}}/{{student}}/unlock/{{week_no}}">Press to Unlock</i></a>
+          
+            
+          {%endif%}
+
+      </td>
+
+      <td style="text-align:right">
+        <!-- Date and Time of Latest Submission: <br> -->
+        {{week_submission_date}}
+      </td>
+      </tr>
+  {%endfor%}
+  {% endif %}
+
+</table>
+
+
+<div class="footer">
+      <p style="font-size: 12px">Copyright © 2019. All Rights Reserved. <a href="/dev_page">Meet the Creators</a></p>      
+</div>
+
+</div>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+{% endblock %}
