@@ -18,12 +18,15 @@ class Command(BaseCommand):
 			for column in reader:
 				domain_name = ""
 				temp_password = get_random_string(8)
-				student_email = "f" + column[0][0:4] + column[0][8:12]
+				
 				if column[0][-1] == 'P':
+					student_email = "f" + column[0][0:4] + column[0][9:12]
 					domain_name = "@pilani.bits-pilani.ac.in"
 				if column[0][-1] == 'G':
+					student_email = "f" + column[0][0:4] + column[0][8:12]
 					domain_name = "@goa.bits-pilani.ac.in"
 				if column[0][-1] == 'H':
+					student_email = "f" + column[0][0:4] + column[0][8:12]
 					domain_name = "@hyderabad.bits-pilani.ac.in"
 				student_email = student_email + domain_name
 				print(student_email, end= " ")
