@@ -10,7 +10,7 @@
 <!-- <table id="myTable"> -->
 {% for student in students%}
 
-<button class="students_allocated_to_mentor" onclick="window.location.href='/PS2/mentor/{{station}}/{{student.student_name}}'" style="text-align: left; padding-left: 20%;">{{student.student_name}}  <div style="float: right; padding-right: 20%; ">{{student.student_id}}</div></button><br>
+<button class="students_allocated_to_mentor" onclick="window.location.href='/PS2/mentor/{{station}}/{{student.student_id}}'" style="text-align: left; padding-left: 20%;">{{student.student_name}}  <div style="float: right; padding-right: 20%; ">{{student.student_id}}</div></button><br>
 
 {%endfor%}
 

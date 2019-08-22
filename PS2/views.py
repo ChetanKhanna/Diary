@@ -220,13 +220,15 @@ class Mentor_view_of_weeks(generic.TemplateView):
 		if current_user.is_authenticated:
 			if UserIdPassword.objects.get(user=current_user).token == 1:
 				# collecting data from url
-				student=kwargs['student']
+				student_id=kwargs['student']
 				station=kwargs['station']
-				count=Week.objects.filter(user_id=Student.objects.get(student_name=student)).count()
+				student_obj = Student.objects.get(student_id=student_id)
+				student_name = student_obj.student_name
+				count=Week.objects.filter(user_id=student_obj).count()
 				mentor_object = Mentor.objects.get(mentor_id = current_user)
 				weeks = (Week.objects.filter(user_id=Student
 						.objects
-						.get(student_name=student)))
+						.get(student_id=student_id)))
 				# wrapping relevant datafields in a tuple -- template doen't needs
 				# entire week data for all weeks
 				weeks_data = [(week.week_no, week.lock, week.submissionDate)
@@ -235,7 +237,8 @@ class Mentor_view_of_weeks(generic.TemplateView):
 				weeks_data.reverse()
 				params = {'enteries':range(count),
 					'station':station,
-					'student':student,
+					'student_name': student_name,
+					'student':student_id,
 					'mentor': mentor_object,
 					'weeks_data': weeks_data
 					}
@@ -255,13 +258,13 @@ class Lock(generic.TemplateView):
 		if current_user.is_authenticated:
 			if UserIdPassword.objects.get(user=current_user).token == 1:
 				station=kwargs['station']
-				student=kwargs['student']
+				student_id=kwargs['student']
 				enteryNumber=kwargs['enteryNumber']
-				week_object = Week.objects.get(week_no = enteryNumber,user_id = Student.objects.get(student_name=student) )
+				week_object = Week.objects.get(week_no = enteryNumber,user_id = Student.objects.get(student_id=student_id) )
 				# setting lock attribute --> 1 : Entry Locked
 				week_object.lock=1
 				week_object.save()
-				return redirect('/PS2/mentor/'+station+'/'+student)
+				return redirect('/PS2/mentor/'+station+'/'+student_id)
 			else:
 				return redirect('../student')
 		else:
@@ -273,13 +276,13 @@ class UnLock(generic.TemplateView):
 		if current_user.is_authenticated:
 			if UserIdPassword.objects.get(user=current_user).token == 1:
 				station=kwargs['station']
-				student=kwargs['student']
+				student_id=kwargs['student']
 				enteryNumber=kwargs['enteryNumber']
-				week_object = Week.objects.get(week_no = enteryNumber,user_id = Student.objects.get(student_name=student) )
+				week_object = Week.objects.get(week_no = enteryNumber,user_id = Student.objects.get(student_id=student_id) )
 				# setting attribute --> 0: Entry unlocked (editable)
 				week_object.lock=0
 				week_object.save()
-				return redirect('/PS2/mentor/'+station+'/'+student)
+				return redirect('/PS2/mentor/'+station+'/'+student_id)
 			else:
 				return redirect('../student')
 		else:
@@ -294,11 +297,13 @@ class Mentor_view_of_entry(generic.TemplateView):
 			if UserIdPassword.objects.get(user=current_user).token == 1:
 				# collecting relevant data from url
 				station=kwargs['station']
-				student=kwargs['student']
+				student_id=kwargs['student']
+				student_obj = Student.objects.get(student_id=student_id)
+				student_name = student_obj.student_name
 				enteryNumber=kwargs['enteryNumber']
 				# Week enteries for current student
 				week_object = Week.objects.get(week_no = enteryNumber,
-						user_id = Student.objects.get(student_name=student) )
+						user_id = student_obj)
 				# rendering template
 				return render(request, 'PS2/mentor_view_of_entry.html',
 					{'tasksplanned':week_object.tasksplanned,
@@ -312,7 +317,8 @@ class Mentor_view_of_entry(generic.TemplateView):
 					'mentor': Mentor.objects.get(mentor_id = current_user),
 					'week':week_object,
 					'station':station,
-					'student':student,
+					'student':student_id,
+					'student_name': student_name,
 					'enteryNumber':enteryNumber,
 					},)
 			else:
@@ -325,11 +331,11 @@ class Mentor_view_of_entry(generic.TemplateView):
 		if(current_user.is_authenticated):
 			if UserIdPassword.objects.get(user=current_user).token == 1:
 				station=kwargs['station']
-				student=kwargs['student']
+				student_id=kwargs['student']
 				enteryNumber=kwargs['enteryNumber']
 
 				week_object = Week.objects.get(week_no = enteryNumber,
-						user_id = Student.objects.get(student_name=student) )
+						user_id = Student.objects.get(student_id=student_id) )
 				# collecting POSTed data
 				# Submit only : default status for week entry is 0 --> Unlocked
 				if request.POST.get("Submit"):
@@ -466,8 +472,8 @@ class Student_profile(generic.TemplateView):
 			elif UserIdPassword.objects.get(user=current_user).token == 1:
 				student_object=""
 				if not hide :
-					student_name = kwargs['student']
-					student_object = Student.objects.get(student_name = student_name)
+					student_id = kwargs['student']
+					student_object = Student.objects.get(student_id = student_id)
 
 				# Each student will have one faculty mentor : Use get
 				mentor_object = Mentor.objects.get(mentor_id = current_user)
@@ -487,12 +493,12 @@ class Student_profile(generic.TemplateView):
 			# Defining and accepting fields submittable by students
 			if request.POST.get("submit_student") and UserIdPassword.objects.get(user=current_user).token == 0:
 				# Collecting details
-				student_name = kwargs['student']
+				student_id = kwargs['student']
 				organization_contact = request.POST.get('organization_contact')
 				organization_email_id = request.POST.get('organization_email_id')
 				organization_mentor = request.POST.get('organization_mentor')
 				# making student object
-				student_object = Student.objects.get(student_name = student_name)
+				student_object = Student.objects.get(student_id = student_id)
 				# filling details in data tables
 				student_object.organization_mentor = organization_mentor
 				student_object.organization_email_id = organization_email_id
@@ -500,19 +506,19 @@ class Student_profile(generic.TemplateView):
 				# saving details
 				student_object.save()
 				# rendering page
-				return redirect('/PS2/student_profile/0/{}'.format(student_name))
+				return redirect('/PS2/student_profile/0/{}'.format(student_id))
 
 			if request.POST.get("submit_student_phone") and UserIdPassword.objects.get(user=current_user).token == 0:
-				student_name = kwargs['student']
+				student_id = kwargs['student']
 				student_contact = request.POST.get('student_contact')
 				# making student object
-				student_object = Student.objects.get(student_name = student_name)
+				student_object = Student.objects.get(student_id = student_id)
 				# filling details in data tables
 				student_object.student_contact = student_contact
 				# saving details
 				student_object.save()
 				# rendering page
-				return redirect('/PS2/student_profile/0/{}'.format(student_name))
+				return redirect('/PS2/student_profile/0/{}'.format(student_id))
 
 
 			elif request.POST.get("submit_mentor") and UserIdPassword.objects.get(user=current_user).token == 1:
@@ -526,8 +532,8 @@ class Student_profile(generic.TemplateView):
 				return redirect(request,"/PS2/student")
 
 			elif request.POST.get("downloadDiary"):
-				student_name = kwargs['student']
-				student_object = Student.objects.get(student_name = student_name)
+				student_id = kwargs['student']
+				student_object = Student.objects.get(student_id = student_id)
 				print(student_object)
 				return self.pdf_view(request,student_object)
 			else :
