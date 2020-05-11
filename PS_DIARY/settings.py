@@ -25,8 +25,7 @@ SECRET_KEY = 'sr^zbs&w*=%il%8be571lh)sxx346o#*5)s&pl*-t!r1-7v_u^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['10.20.15.72', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 # Application definition
 
@@ -81,21 +80,10 @@ WSGI_APPLICATION = 'PS_DIARY.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# To use MySQL, uncomment the following and remove the top "default"
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'PSD_Diary',
-        'USER': 'psduser',
-        'PASSWORD': '123456',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-#
-
 }
 
 
@@ -123,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -140,21 +128,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 CRISPY_TEMPLATE_PACK='bootstrap4'
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "static"),
-# ]
 
 # Redirects
 LOGIN_REDIRECT_URL = '/PS2/redirect/'
 LOGOUT_REDIRECT_URL = '/PS2/login'
-
-# Email Support
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com' # mail service smtp
-EMAIL_HOST_USER = 'psdiary.bits@gmail.com' # email id
-EMAIL_HOST_PASSWORD = 'Q!W@E#R$' # password
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
 
 #Session Timeout
 SESSION_EXPIRE_SECONDS = 14400 #in seconds == 4hrs

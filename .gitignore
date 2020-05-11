@@ -1,0 +1,19 @@
+# Editor directories and files
+.idea
+.vscode
+
+# dB
+db.sqlite3
+
+# __pycache__
+**/__pycache__
+
+# environment files
+**/*env
+
+# local settings
+**/local_settings.py
+
+# static files
+**/static
+**/media
