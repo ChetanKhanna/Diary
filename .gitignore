@@ -17,3 +17,7 @@ db.sqlite3
 # static files
 **/static
 **/media
+
+# passwords file
+studentPassword.txt
+mentorPassword.txt
