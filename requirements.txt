@@ -1,7 +1,7 @@
 amqp==2.4.2
 anyjson==0.3.3
 billiard==3.6.0.0
-celery==4.3.0
+celery==5.2.2
 celery-progress==0.0.3
 Django==2.2.10
 django-crispy-forms==1.7.2
